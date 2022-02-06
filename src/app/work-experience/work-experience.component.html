@@ -1,0 +1,107 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0">
+	<div class="container">
+	  <div *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</div>
+	  <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+		 aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="d-flex justify-content-start align-items-center">
+			<i class="fas fa-bars"></i>
+		 </span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarExample01">
+		 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item active">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/general' >General Information</a>
+			</li>
+			<li class="nav-item">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/education'>Education details</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/work'>Work Experience</a>
+			</li>
+			<li class="nav-item">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/skills'>Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-outline-dark " routerLink = '/resume/motivation'>Motivation</a>
+			 </li>
+		 </ul>
+	  </div>
+	</div>
+ </nav>
+
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+ <section class="section gray-bg" id="resume">
+             <div *ngFor="let user of users" class="container">
+                 <div class="row">
+                     <div class="col-lg-6">
+                         <div class="section-title">
+                             <h2>Experience</h2>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-lg-6 m-15px-tb">
+                         <div class="resume-box">
+                             <ul>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-user-graduate"></i>
+                                     </div>
+                                     <span class="time"> {{user.fromDate}}- {{user.toDate}}</span>
+                                     <h5>{{user.companyName}} - {{user.jobPosition}}</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-user-graduate"></i>
+                                     </div>
+                                     <span class="time">2019 - Present</span>
+                                     <h5>Art Director - Facebook Inc</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-user-graduate"></i>
+                                     </div>
+                                     <span class="time">2019 - Present</span>
+                                     <h5>Art Director - Facebook Inc</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="col-lg-6 m-15px-tb">
+                         <div class="resume-box">
+                             <ul>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-briefcase"></i>
+                                     </div>
+                                     <span class="time">2019 - Present</span>
+                                     <h5>Art Director - Facebook Inc</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-briefcase"></i>
+                                     </div>
+                                     <span class="time">2019 - Present</span>
+                                     <h5>Art Director - Facebook Inc</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                                 <li>
+                                     <div class="icon">
+                                         <i class="fas fa-briefcase"></i>
+                                     </div>
+                                     <span class="time">2019 - Present</span>
+                                     <h5>Art Director - Facebook Inc</h5>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>

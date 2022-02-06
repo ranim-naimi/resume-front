@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0">
+	<div class="container">
+	  <div *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</div>
+	  <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+		 aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="d-flex justify-content-start align-items-center">
+			<i class="fas fa-bars"></i>
+		 </span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarExample01">
+		 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item active">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/general' >General Information</a>
+			</li>
+			<li class="nav-item">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/education'>Education details</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/work'>Work Experience</a>
+			</li>
+			<li class="nav-item">
+			  <a class="btn btn-outline-dark " routerLink = '/resume/skills'>Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-outline-dark " routerLink = '/resume/motivation'>Motivation</a>
+			 </li>
+		 </ul>
+	  </div>
+	</div>
+ </nav>
+
+
+ <div  *ngFor="let user of users" class="container1">
+	<div class="row">
+		 <div class="col-md-12">
+			  <div class="card">
+					<div class="card-body">
+						 <div id="content">
+							  <ul class="timeline">
+									<li class="event" data-date=""> 
+										 <h3>{{user.university}}</h3>
+										 <p>{{user.graduation}}</p>
+									</li>	
+							  </ul>
+						 </div>
+					</div>
+			  </div>
+		 </div>
+	</div>
+</div>

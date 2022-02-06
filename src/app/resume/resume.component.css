@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.navbar-brand {
+   letter-spacing: 3px;
+   color: #161516;
+ }
+ 
+ .navbar-brand:hover {
+    color: #f70ea9;
+ }
+ 
+ .navbar-scroll .nav-link,
+ .navbar-scroll .fa-bars {
+   color: #1b1a19;
+ }
+ 
+ .navbar-scrolled .nav-link,
+ .navbar-scrolled .fa-bars {
+   color: #1b171b;
+ }
+ 
+ .navbar-scrolled {
+   background-color: #110f11;
+ }
+ .btn-outline-dark {
+   margin-left: 10px;
+ }
+
+.navbar-expand-lg {
+  background-color: #bb97c4;
+}
+.navbar-expand-lg :hover {
+  color: #f70ea9;
+} 

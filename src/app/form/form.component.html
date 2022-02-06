@@ -1,0 +1,212 @@
+<div class="submit-form">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-dark">General Information</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="job-detail mt-2 p-4">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="resume-user mb-5">
+                <i class="mdi mdi-account text-white"></i>
+              </div>
+            </div>
+          </div>
+
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group app-label">
+            <label for="frist-name" class="text-muted">First Name</label>
+            <input id="frist-name" [(ngModel)]="user.firstName" name ="firstName"   type="text" class="form-control resume" placeholder="">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group app-label">
+            <label  class="text-muted">Last Name</label>
+            <input id="last-name" [(ngModel)]= "user.lastName" name ="lastName" type="text" class="form-control resume" placeholder="">
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="form-group app-label">
+            <label for="date-of-birth" class="text-muted">Date of Birth</label>
+            <input id="date-of-birth" [(ngModel)]= "user.dateOfBirth" name ="dateOfBirth" type="text" class="form-control resume" placeholder="dd-mm-yyy">
+          </div>
+        </div>
+
+        <div class="row">
+    <div class="col-lg-12">
+      <h3 class="text-dark mt-5">Contact Information</h3>
+    </div>
+  
+
+  
+
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group app-label">
+          <label for="frist-name" class="text-muted">City</label>
+          <input id="frist-name" [(ngModel)]= "user.city" name ="city" type="text" class="form-control resume" placeholder="">
+        </div>
+      </div>
+                
+
+              
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group app-label">
+            <label for="frist-name" class="text-muted">Country</label>
+            <input id="frist-name" [(ngModel)]= "user.country" name ="country" type="text" class="form-control resume" placeholder="">
+          </div>
+        </div>
+
+              <div class="col-md-4">
+                <div class="form-group app-label">
+                  <label for="phone" class="text-muted">Phone</label>
+                  <input id="phone" type="text" [(ngModel)]= "user.phone" name ="phone" class="form-control resume" placeholder="">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group app-label">
+                  <label for="e-mail" class="text-muted">E-mail</label>
+                  <input id="e-mail" [(ngModel)]= "user.email" name ="email"type="text" class="form-control resume" placeholder="">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group app-label">
+                  <label for="e-mail" class="text-muted">Address</label>
+                  <input id="e-mail" [(ngModel)]= "user.address" name ="address"type="text" class="form-control resume" placeholder="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3 class="text-dark mt-5">Education Details</h3>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group app-label">
+                    <label for="graduation" class="text-muted">Graduation</label>
+                    <input id="graduation" [(ngModel)]= "user.graduation" name ="graduation" type="text" class="form-control resume" placeholder="">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group app-label">
+                    <label for="university/college" class="text-muted">University/College</label>
+                    <input id="university/college" [(ngModel)]= "user.university" name ="university" type="text" class="form-control resume" placeholder="">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group app-label">
+                    <label for="degree/certification" class="text-muted">Degree/Certification</label>
+                    <input id="degree/certification" [(ngModel)]= "user.degree" name ="degree" type="text" class="form-control resume" placeholder="">
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3 class="text-dark mt-5">Work Experience</h3>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group app-label">
+                      <label for="company-name" class="text-muted">Company Name</label>
+                      <input id="company-name" [(ngModel)]= "user.companyName" name ="companyName"type="text" class="form-control resume" placeholder="">
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="form-group app-label">
+                      <label for="job-position" class="text-muted">Job Position</label>
+                      <input id="job-position" [(ngModel)]= "user.jobPosition" name ="jobPosition"type="text" class="form-control resume" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group app-label">
+                          <label for="date-from" class="text-muted">Date From</label>
+                          <input id="date-from" [(ngModel)]= "user.fromDate" name ="dateFrom" type="text" class="form-control resume" placeholder="dd-mm-yyy">
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6">
+                        <div class="form-group app-label">
+                          <label for="date-to" class="text-muted">Date To</label>
+                          <input id="date-to" [(ngModel)]= "user.toDate" name ="dateTo" type="text" class="form-control resume" placeholder="dd-mm-yyy">
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h3 class="text-dark mt-5">Skills</h3>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="form-group app-label">
+                            <label for="skills" class="text-muted">Skills</label>
+                            <input id="skills" [(ngModel)]= "user.skills" name ="skills"type="text" class="form-control resume" placeholder="HTML, CSS, PHP, javascript, ...">
+                          </div>
+                        </div>
+                      </div>
+
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="text-dark mt-5">Why did you join Talan Tunisia</h3>
+    </div>
+  </div>
+
+
+  <div class="col-lg-12">
+    <div class="form-group app-label">
+      <label class="text-muted"></label>
+      <textarea id="motivation"  [(ngModel)]= "user.motivation" name ="motivation"rows="4" class="form-control resume" placeholder="Motivation"></textarea>
+    </div>
+  </div>
+
+              
+
+              
+
+             
+
+
+
+    
+     
+    
+      <div class="col text-center">
+      <button  class="btn btn-info" (click)="saveUser()"  target="_blank" routerLink = '/resume'>Submit</button>
+    </div>
+    </div>
+  </div>
+ </div>

@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 15,
+    "editor.codeLensFontSize": 10,
+    "editor.inlayHints.fontSize": 5
+}
